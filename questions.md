@@ -11,8 +11,8 @@ Because ShouldComponentUpdate return a false statement and when some state in th
 3. Describe 3 ways to pass information from a component to its PARENT.
 
 - Handle a state in the parent and pass by props the set function to the child, in order to update the state in the child and have that value in the parent.
-- Handle data by reference, aswell as the state handler, we can pass a reference by props to the child from the parent, handle in the child and receibe the data in the parent.
-- Use context to have global state handlers that can be read in parent and setted in the child.
+- Handle data by reference, as well as the state handler, we can pass a reference by props to the child from the parent, handle in the child and receive the data in the parent.
+- Use context to have global state handlers that can be read in parent and set in the child.
 
 4. Give 2 ways to prevent components from re-rendering.
 
@@ -23,7 +23,7 @@ Because ShouldComponentUpdate return a false statement and when some state in th
 5. What is a fragment and why do we need it? Give an example where it might
 break my app.
 
-A fragment is a react componet that can be expressed like this <Fragment /> or just simplified with <></>, that allow us to wrap a component to many purposes and not render any html element visible in the DOM. A fragment might be a problem at the time we need to style elements because react fragment does not add a DOM node so we are not be able to style it.
+A fragment is a react component that can be expressed like this <Fragment /> or just simplified with <></>, that allow us to wrap a component to many purposes and not render any html element visible in the DOM. A fragment might be a problem at the time we need to style elements because react fragment does not add a DOM node so we are not be able to style it.
 
 6. Give 3 examples of the HOC pattern.
 
@@ -62,7 +62,7 @@ const ComponentWithHOC = withAnyHOC(Component)
 7. what's the difference in handling exceptions in promises, callbacks and
 async...await.
 
-The sintax is the main difference, with callbacks we need to throw an exception in the  callback function, with promisses we have a way to do that in the parameter of the Promise which is called "reject". Finally with async and await, we can use a "try catch" to get the exeption in the paramenter of the "catch".
+The sintax is the main difference, with callbacks we need to throw an exception in the  callback function, with promises we have a way to do that in the parameter of the Promise which is called "reject". Finally with async and await, we can use a "try catch" to get the exception in the parameter of the "catch".
 
 Examples:
 ```js
@@ -105,9 +105,9 @@ It takes 3 arguments, the state, the props and a callback. The reason why it is 
 - Map the state
 - Map the life cycle methods
 - Map the render method
-- Write the base code for a funcitional component
-- Copy the jsx elements that was in the render method to return it in the funcitonal component
-- Replace the life cycle methos with proper hooks like useEffect to handle request for example
+- Write the base code for a functional component
+- Copy the jsx elements that was in the render method to return it in the functional component
+- Replace the life cycle methods with proper hooks like useEffect to handle request for example
 - Use the hook useState in each state that we map in the class component
 - Implement set state methods where necessary.
 
