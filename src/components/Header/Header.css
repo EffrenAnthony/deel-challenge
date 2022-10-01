@@ -1,0 +1,14 @@
+.header{
+  text-align: center;
+  margin-top: 45px;
+}
+
+.header__subtitle{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #14357A;
+  margin: 0;
+  font-style: italic;
+  margin-left: 100px;
+}
